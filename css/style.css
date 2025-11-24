@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.header-container {
+    max-height: 80px;
+}
+
+.navbar-brand img {
+    width: 300px;
+}
+
+.no-user-links {
+    display: flex;
+    list-style: none;
+    gap: 3;
+    margin-bottom: 0;
+}
+.user-links {
+    display: none;
+    list-style: none;
+    gap: 3;
+    margin-bottom: 0;
+    align-items: center;
+}
+
+.shopping-cart-icon {
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#productsCart {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    width: 200px;
+    max-height: 400px;
+    overflow-y: auto;
+    background-color: white;
+    border: 1px solid #a1a1a1;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    padding: 0;
+    border-radius: 5px;
+}
+.cart-product {
+    background-color: #dddddd;
+}
+#viewAll {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-top: 1px solid #ccc;
+    text-decoration: none;
+    color: #333;
+    transition: 0.3s;
+}
+#viewAll:hover {
+    background-color: #e0e0e0;
+}
+
+.add , .del {
+    width: 25px;
+    height: 25px;
+    line-height: 23px;
+    cursor: pointer;
+    color: #666666;
+    border-color: #666666 !important;
+    transition: 0.3s;
+}
+.add:hover , .del:hover {
+    color: #ccc;
+    background-color: #666666;
+}
+
+.count-value {
+    display: inline-block;
+    width: 18px;
+    height: 25px;
+}
+
+/* login & signup form */
+
+.login-page {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    padding: 20px;
+    width: 60%;
+}
+
+.login-form input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    height: 30px;
+    margin: 5px 0px 10px 0px;
+    /* outline: none; */
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+}
+.login-form input[type="submit"] {
+    cursor: pointer;
+    width: fit-content;
+    padding: 7px 15px;
+    height: fit-content;
+}
+.login-form p {
+    /* padding: 0; */
+    margin: 0;
+    font-size: 15px;
+}
+
+.login-form input[type="checkbox"]{
+    display: inline-block;
+    width: fit-content;
+    height: fit-content;
+}
+
+/* search */
+
+#filterKey {
+    max-width: 250px;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 5px;
+}
+#filterKey option {
+    border-radius: 5px;
+    padding: 20px;
+    border: none;
+}
+
+/* products */
+
+/* .product-desc {
+    width: fit-content;
+    margin: auto;
+} */
+
+.product-card {
+    height: 400px;
+}
+
+.product-img-div {
+    overflow: hidden;
+    border-start-start-radius: 5px;
+    border-start-end-radius: 5px;
+}
+.product-img {
+    transition: 0.3s;
+    /* border-radius: 5px; */
+}
+.product-img:hover {
+    transform: scale(1.1);
+}
+
+.fav {
+    display: none;
+}
+.fav , .unfav {
+    cursor: pointer;
+}
+.remove-btn {
+    display: none;
+}
+.hover-trans {
+    transition: 0.3s;
+
+}
+.hover-trans:hover {
+    transform: translatey(-5px);
+    border: 1px solid #0d6efd;
+    box-shadow: 1px 1px 10px 1px #666666;
+}
+
+/* cart */
+
+.cart-products-div {
+    height: 450px;
+    overflow-y: auto;
+}
+
+.cart-add , .cart-del {
+    width: 30px;
+    height: 35px;
+    line-height: 34px;
+    cursor: pointer;
+    color: #666666;
+    border-color: #666666 !important;
+    transition: 0.3s;
+}
+
+.cart-add:hover , .cart-del:hover {
+    color: #ccc;
+    background-color: #666666;
+}
+
+.cart-hover{
+    transition: 0.3s;
+}
+
+.cart-hover:hover {
+    transform: translatey(-5px);
+    border: 1px solid #fd0d0d;
+    box-shadow: 1px 1px 10px 1px #666666;
+}
+
+.underline {
+    width: 200px;
+    height: 3px;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.favorite-title:hover + .underline {
+    width: 300px;
+}
+
+.fav-products {
+    display: flex;
+    overflow-x: auto;
+}
+
+.fav-card {
+    flex: 0 0 260px !important;
+    /* منع التمدد/الانكماش وفرض أساس عرض 300px */
+    max-width: 260px !important;
+    min-width: 260px !important;
+}
+
+.cart-fav {
+    cursor: pointer;
+}
+
+.fav-img-div {
+    overflow: hidden;
+    border-start-start-radius: 5px;
+    border-start-end-radius: 5px;
+}
+
+.fav-img {
+    transition: 0.3s;
+    /* border-radius: 5px; */
+}
+
+.fav-img:hover {
+    transform: scale(1.1);
+}
+
