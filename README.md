@@ -30,6 +30,7 @@ JavaScript
 Bootstrap
 
 📁 Folder Structure
+
 project/
 │── index.html
 │── style.css
